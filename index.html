@@ -5,7 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
-    <script src="javascript/formulario.js"></script>
     <title>Questionário SJT</title>
 </head>
 <body>
@@ -13,15 +12,15 @@
     <main>
         <section>
             <h2>Questionário SJT</h2>
-            <form action="https://formsubmit.co/sergiocouter@gmail.com" method="post">
+            <form action="https://formsubmit.co/sergiocouter@gmail.com" method="post" name="formulario" id="form">
 
                 <label>Nome</label>
-                <input type="text" name="name" value="" placeholder="Digite seu Nome" required>
+                <input type="text" name="name" value="" id="nome" placeholder="Digite seu Nome" required>
 
                 <label>Email</label>
-                <input type="text" name="email" placeholder="Digite seu E-mail" required>
+                <input type="text" name="email" value="" id="email" placeholder="Digite seu E-mail" required>
 
-                <h3>Primeira pergunta</h3>
+                <h3 class="tituloDaPergunta">Primeira pergunta</h3>
                 <p>Você tem trabalhado em um projeto que, embora interessante,provou ser demorado e um
                     tanto desafiador.Algumas dessas dificuldades experimentaram devido a um membro inexperiente 
                     da equipe que precisava de apoio extra para realizar seu potencial.Embora esta situação tenha
@@ -31,68 +30,172 @@
                     você não está conhecendo. Qual a melhor sugestão.
                 </p>
 
-                <div class="div_primeira_pergunta">
-                    
-                    <input type="radio" name="radio" value="Resposta: Explique honestamente ao gerente que o atual projeto e colega 
-                    de trabalho inexperiente precisam de suporte até a conclusão.Você prefere não abandonar o indivíduo
-                    e arriscar o projeto falhando. " class="radio_primeira_pergunta">
+                <div class="div_perguntas">                    
+                    <input type="radio" name="primeiraPergunta" value="4" class="radio_perguntas">
                     <label>Explique honestamente ao gerente que o atual projeto e colega 
                         de trabalho inexperiente precisam de suporte até a conclusão.Você prefere não abandonar o indivíduo
                         e arriscar o projeto falhando.
-                    </label> 
-                    
+                    </label>                     
                 </div>
 
-                <div class="div_primeira_pergunta">                    
-                    <input type="radio" name="radio" value="Resposta: Assuma o segundo projeto e trabalhar horas extras para garantir que
-                    atenção suficiente possa ser dedicada a cada um. Assim, o colega menos experiente não será 
-                    abandonado e há menos chance do primeiro projeto vai falhar." class="radio_primeira_pergunta">
+                <div class="div_perguntas"> 
+                    <input type="radio" name="primeiraPergunta" value="3" class="radio_perguntas">
                     <label> 
                         Assuma o segundo projeto e trabalhar horas extras para garantir que
                         atenção suficiente possa ser dedicada a cada um. Assim, o colega menos experiente não será 
                         abandonado e há menos chance do primeiro projeto vai falhar.
-                    </label>
-                    
+                    </label>                    
                 </div>
 
-                <div class="div_primeira_pergunta">                    
-                    <input type="radio" name="radio" value="Resposta: Informe o gerente que você adoraria contratar outro projeto 
-                    com garantias de que ambos serão entregues com sucesso. Você também diz ao gerente que o colega de trabalho terá
-                    mais autonomia, mas que você estará no escritório para oferecer orientação, se necessário." class="radio_primeira_pergunta">
+                <div class="div_perguntas"> 
+                    <input type="radio" name="primeiraPergunta" value="2" class="radio_perguntas">
                     <label> 
                         Informe o gerente que você adoraria contratar outro projeto 
                         com garantias de que ambos serão entregues com sucesso. Você também diz ao gerente que o colega de trabalho terá
                         mais autonomia, mas que você estará no escritório para oferecer orientação, se necessário.
-                    </label>
-                    
+                    </label>                    
                 </div>
 
-                <div class="div_primeira_pergunta">                    
-                    <input type="radio" name="radio" value="Resposta: Concordo com o segundo projeto e entrar em contato com o 
-                    colega de trabalho inexperiente enquanto eles trabalham no primeiro projeto. Desta forma, você será capaz de
-                    manter um olho no primeiro projeto enquanto você gerencia o segundo." class="radio_primeira_pergunta">
+                <div class="div_perguntas"> 
+                    <input type="radio" name="primeiraPergunta" value="1" class="radio_perguntas">
                     <label>
                         Concordo com o segundo projeto e entrar em contato com o 
                         colega de trabalho inexperiente enquanto eles trabalham no primeiro projeto. Desta forma, você será capaz de
                         manter um olho no primeiro projeto enquanto você gerencia o segundo.
-                    </label>
-                     
+                    </label>     
                 </div>
 
-                <button type="submit">Enviar</button>
+                <h3 class="tituloDaPergunta">Segunda pergunta</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                   Ipsam nam debitis expedita vitae officiis, cum, architecto libero dolore omnis ea,
+                   totam aspernatur at minima? Corrupti quos cum tempora veritatis ad.</p>
+                
+                   <div class="div_perguntas">                    
+                    <input type="radio" name="segundaPergunta" value="1" class="radio_perguntas">
+                    <label>Explique honestamente ao gerente que o atual projeto e colega 
+                        de trabalho inexperiente precisam de suporte até a conclusão.Você prefere não abandonar o indivíduo
+                        e arriscar o projeto falhando.
+                    </label>                     
+                </div>
+
+                <div class="div_perguntas"> 
+                    <input type="radio" name="segundaPergunta" value="2" class="radio_perguntas">
+                    <label> 
+                        Assuma o segundo projeto e trabalhar horas extras para garantir que
+                        atenção suficiente possa ser dedicada a cada um. Assim, o colega menos experiente não será 
+                        abandonado e há menos chance do primeiro projeto vai falhar.
+                    </label>                    
+                </div>
+
+                <div class="div_perguntas"> 
+                    <input type="radio" name="segundaPergunta" value="3" class="radio_perguntas" >
+                    <label> 
+                        Informe o gerente que você adoraria contratar outro projeto 
+                        com garantias de que ambos serão entregues com sucesso. Você também diz ao gerente que o colega de trabalho terá
+                        mais autonomia, mas que você estará no escritório para oferecer orientação, se necessário.
+                    </label>                    
+                </div>
+
+                <div class="div_perguntas"> 
+                    <input type="radio" name="segundaPergunta" value="4" class="radio_perguntas">
+                    <label>
+                        Concordo com o segundo projeto e entrar em contato com o 
+                        colega de trabalho inexperiente enquanto eles trabalham no primeiro projeto. Desta forma, você será capaz de
+                        manter um olho no primeiro projeto enquanto você gerencia o segundo.
+                    </label>     
+                </div>
+
+                <h3 class="tituloDaPergunta">Terceira pergunta</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                   Ipsam nam debitis expedita vitae officiis, cum, architecto libero dolore omnis ea,
+                   totam aspernatur at minima? Corrupti quos cum tempora veritatis ad.</p>
+                
+                   <div class="div_perguntas">                    
+                    <input type="radio" name="terceiraPergunta" value="4" class="radio_perguntas">
+                    <label>Explique honestamente ao gerente que o atual projeto e colega 
+                        de trabalho inexperiente precisam de suporte até a conclusão.Você prefere não abandonar o indivíduo
+                        e arriscar o projeto falhando.
+                    </label>                     
+                </div>
+
+                <div class="div_perguntas"> 
+                    <input type="radio" name="terceiraPergunta" value="3" class="radio_perguntas">
+                    <label> 
+                        Assuma o segundo projeto e trabalhar horas extras para garantir que
+                        atenção suficiente possa ser dedicada a cada um. Assim, o colega menos experiente não será 
+                        abandonado e há menos chance do primeiro projeto vai falhar.
+                    </label>                    
+                </div>
+
+                <div class="div_perguntas"> 
+                    <input type="radio" name="terceiraPergunta" value="2"  class="radio_perguntas">
+                    <label> 
+                        Informe o gerente que você adoraria contratar outro projeto 
+                        com garantias de que ambos serão entregues com sucesso. Você também diz ao gerente que o colega de trabalho terá
+                        mais autonomia, mas que você estará no escritório para oferecer orientação, se necessário.
+                    </label>                    
+                </div>
+
+                <div class="div_perguntas"> 
+                    <input type="radio" name="terceiraPergunta" value="1" class="radio_perguntas">
+                    <label>
+                        Concordo com o segundo projeto e entrar em contato com o 
+                        colega de trabalho inexperiente enquanto eles trabalham no primeiro projeto. Desta forma, você será capaz de
+                        manter um olho no primeiro projeto enquanto você gerencia o segundo.
+                    </label>     
+                </div>
+
+                <h3 class="tituloDaPergunta">Quarta pergunta</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                   Ipsam nam debitis expedita vitae officiis, cum, architecto libero dolore omnis ea,
+                   totam aspernatur at minima? Corrupti quos cum tempora veritatis ad.</p>
+                
+                   <div class="div_perguntas">                    
+                    <input type="radio" name="quartaPergunta" value="1" class="radio_perguntas">
+                    <label>Explique honestamente ao gerente que o atual projeto e colega 
+                        de trabalho inexperiente precisam de suporte até a conclusão.Você prefere não abandonar o indivíduo
+                        e arriscar o projeto falhando.
+                    </label>                     
+                </div>
+
+                <div class="div_perguntas"> 
+                    <input type="radio" name="quartaPergunta" value="2" class="radio_perguntas">
+                    <label> 
+                        Assuma o segundo projeto e trabalhar horas extras para garantir que
+                        atenção suficiente possa ser dedicada a cada um. Assim, o colega menos experiente não será 
+                        abandonado e há menos chance do primeiro projeto vai falhar.
+                    </label>                    
+                </div>
+
+                <div class="div_perguntas"> 
+                    <input type="radio" name="quartaPergunta" value="3" class="radio_perguntas" >
+                    <label> 
+                        Informe o gerente que você adoraria contratar outro projeto 
+                        com garantias de que ambos serão entregues com sucesso. Você também diz ao gerente que o colega de trabalho terá
+                        mais autonomia, mas que você estará no escritório para oferecer orientação, se necessário.
+                    </label>                    
+                </div>
+
+                <div class="div_perguntas"> 
+                    <input type="radio" name="quartaPergunta" value="4" class="radio_perguntas">
+                    <label>
+                        Concordo com o segundo projeto e entrar em contato com o 
+                        colega de trabalho inexperiente enquanto eles trabalham no primeiro projeto. Desta forma, você será capaz de
+                        manter um olho no primeiro projeto enquanto você gerencia o segundo.
+                    </label>     
+                </div>
+
+                <div>
+                <input type="hidden" name="media_dos_pesos" id="media_dos_pesos" value="">
+                </div>
+                
+                <button type="submit" id="btnSubmit">Enviar</button>
                 <input type="hidden" name="_next" value="https://frabjous-pudding-54a6d0.netlify.app">
                 <input type="hidden" name="_cc" value="marcelomederi11@gmail.com">
                 <input type="hidden" name="_captcha" value="false">
             </form>
         </section>
     </main>
-
-    <footer>
-
-    </footer>
-
-    <script>
-
-    </script>
+    <script src="javascript/formulario.js"></script>
 </body>
 </html>

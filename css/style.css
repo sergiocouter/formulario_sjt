@@ -39,7 +39,7 @@ section form{
 
 form h3, p{
     color: white;
-    padding-bottom: 20px;
+    padding: 20px 0;
 }
 
 form label{
@@ -56,11 +56,11 @@ form input{
     font-size: 15px;
 }
 
-form input.radio_primeira_pergunta{
+form input.radio_perguntas{
     margin-bottom: 0px;
 }
 
-.div_primeira_pergunta{
+.div_perguntas{
     border: solid 2px white;
     margin-bottom: 15px;
     padding: 8px;
@@ -77,6 +77,13 @@ form button{
 
 form button:hover{
     border-radius: 20px;
+}
+
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 0;
 }
 
 /*Página contato*/
