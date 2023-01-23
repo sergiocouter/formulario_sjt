@@ -5,7 +5,7 @@ var formulario = document.querySelector("#form");
 
         document.getElementById("btnSubmit").onclick = function(e) {
             
-            var radios1 = document.getElementsByName("primeiraPergunta");
+            var radios1 = document.getElementsByName("Porcentagem_Primeira_Pergunta");
 
             for (var i = 0; i < radios1.length; i++) {
                 if (radios1[i].checked) {
@@ -17,7 +17,7 @@ var formulario = document.querySelector("#form");
                 }
             }
 
-            var radios2 = document.getElementsByName("segundaPergunta");
+            var radios2 = document.getElementsByName("Porcentagem_Segunda_Pergunta");
 
             for (var i = 0; i < radios2.length; i++) {
                 if (radios2[i].checked) {
@@ -27,7 +27,7 @@ var formulario = document.querySelector("#form");
                 }
             }
 
-            var radios3 = document.getElementsByName("terceiraPergunta");
+            var radios3 = document.getElementsByName("Porcentagem_Terceira_Pergunta");
 
             for (var i = 0; i < radios3.length; i++) {
                 if (radios3[i].checked) {   
@@ -37,7 +37,7 @@ var formulario = document.querySelector("#form");
                 }
             }
 
-            var radios4 = document.getElementsByName("quartaPergunta");
+            var radios4 = document.getElementsByName("Porcentagem_Quarta_Pergunta");
 
             for (var i = 0; i < radios4.length; i++) {
                 if (radios4[i].checked) {
@@ -51,7 +51,7 @@ var formulario = document.querySelector("#form");
                console.log("A media dos pesos é: " + media);
             
 
-            mediaDosPesos.value = media;
+            mediaDosPesos.value = media + "%";
             console.log(mediaDosPesos.value);
             
         };
