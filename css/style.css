@@ -116,7 +116,37 @@ footer{
     border-radius: 20px;
 }
 
+/*Media query página principal*/
 
+@media (max-width: 500px) {
+    section{
+        padding: 10px 20px;
+        background-color: #1d1d2e;
+        width: 400px;
+    }
+
+    form h3{
+        font-size: 20px;
+    }
+
+    form p{
+        font-size: 16px;
+    }
+
+    form label{
+        color: white;
+        font-size: 15px;
+    }
+
+    form button{
+        margin: 20px 0px 20px 0px;
+        width: 360px;
+        padding: 17px;
+        font-size: 18px;
+        font-weight: bold;
+        
+    }
+}
 
 
 
