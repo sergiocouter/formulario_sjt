@@ -117,6 +117,125 @@ footer{
 }
 
 /*Media query página principal*/
+@media (max-width: 900px) {
+    section{
+        padding: 10px 20px;
+        background-color: #1d1d2e;
+        width: 800px;
+    }
+
+    form h3{
+        font-size: 25px;
+    }
+
+    form p{
+        font-size: 19px;
+    }
+
+    form label{
+        color: white;
+        font-size: 16px;
+    }
+
+    form button{
+        margin: 20px 0px;
+        width: 760px;
+        padding: 17px;
+        font-size: 20px;
+        font-weight: bold;
+        
+    }
+}
+
+@media (max-width: 800px) {
+    section{
+        padding: 10px 20px;
+        background-color: #1d1d2e;
+        width: 700px;
+    }
+
+    form h3{
+        font-size: 24px;
+    }
+
+    form p{
+        font-size: 18px;
+    }
+
+    form label{
+        color: white;
+        font-size: 15px;
+    }
+
+    form button{
+        margin: 20px 0px;
+        width: 660px;
+        padding: 17px;
+        font-size: 20px;
+        font-weight: bold;
+        
+    }
+}
+
+@media (max-width: 700px) {
+    section{
+        padding: 10px 20px;
+        background-color: #1d1d2e;
+        width: 500px;
+    }
+
+    form h3{
+        font-size: 20px;
+    }
+
+    form p{
+        font-size: 16px;
+    }
+
+    form label{
+        color: white;
+        font-size: 14px;
+    }
+
+    form button{
+        margin: 20px 0px;
+        width: 460px;
+        padding: 17px;
+        font-size: 20px;
+        font-weight: bold;
+        
+    }
+}
+
+@media (max-width: 600px) {
+    section{
+        padding: 10px 20px;
+        background-color: #1d1d2e;
+        width: 500px;
+    }
+
+    form h3{
+        font-size: 19px;
+    }
+
+    form p{
+        font-size: 15px;
+    }
+
+    form label{
+        color: white;
+        font-size: 14px;
+    }
+
+    form button{
+        margin: 20px 0px 20px 0px;
+        width: 460px;
+        padding: 17px;
+        font-size: 18px;
+        font-weight: bold;
+        
+    }
+}
 
 @media (max-width: 500px) {
     section{
@@ -147,6 +266,7 @@ footer{
         
     }
 }
+
 
 
 
